@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfiya's Little Birthday World 🌸</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Quicksand:wght@400;500;600;700&family=Sacramento&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="layer layer--bg"></div>
+
+  <div class="layer layer--mid">
+    <div class="blob blob--a"></div>
+    <div class="blob blob--b"></div>
+  </div>
+
+  <div class="layer layer--fg">
+    <div class="petals-layer" id="petalsLayer"></div>
+    <div class="sparkles-layer" id="sparklesLayer"></div>
+  </div>
+
+  <!-- FLOATING BACK BUTTON -->
+  <button class="nav-back" id="navBackBtn" type="button" aria-label="Go to previous page">
+    <span class="nav-back__arrow">←</span>
+    <span class="nav-back__label">Back</span>
+  </button>
+
+  <main class="pages">
+
+    <!-- ================= PAGE 1 ================= -->
+
+    <section class="page page--welcome is-active"
+      data-page="1"
+      id="page-1"
+      aria-hidden="false">
+
+      <p class="page1__pre">Welcome to…</p>
+
+      <h1 class="page1__title">
+        Alfiya's Little World
+      </h1>
+
+      <p class="page1__subtitle">
+        A little world made especially for you. 🌸
+      </p>
+
+      <button class="cta" id="enterBtn" type="button">
+        <span class="cta__surface">
+          <span class="cta__shimmer"></span>
+          <span class="cta__label">Enter Your World</span>
+          <span class="cta__spark">✨</span>
+        </span>
+      </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 2 ================= -->
+
+    <section class="page page--reveal"
+      data-page="2"
+      id="page-2"
+      aria-hidden="true">
+
+      <div class="page2__glow"></div>
+
+      <div class="page2__leaf page2__leaf--l">🌿</div>
+      <div class="page2__leaf page2__leaf--r">🌿</div>
+
+      <p class="page2__pre">
+        Today isn't just another day…
+      </p>
+
+      <p class="page2__line">
+        It's <span>YOUR</span> day, Alfiya.
+      </p>
+
+      <h1 class="page2__hero">
+        Happy 19th Birthday
+      </h1>
+
+      <p class="page2__subtitle">
+        A little celebration for the girl who makes
+        ordinary moments feel special.
+      </p>
+
+      <button class="cta" id="page2Btn" type="button">
+        <span class="cta__surface">
+          <span class="cta__shimmer"></span>
+          <span class="cta__label">
+            Open Your First Surprise 🎁
+          </span>
+          <span class="cta__spark">✨</span>
+        </span>
+      </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 3 ================= -->
+
+    <section class="page page--gift"
+      data-page="3"
+      id="page-3"
+      aria-hidden="true">
+
+      <div class="page3__glow"></div>
+
+      <div class="page3__sparkles">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+      </div>
+
+      <p class="page3__pre">
+        Your first surprise… 🎁
+      </p>
+
+      <!-- GIFT -->
+      <div class="gift" id="giftBox">
+
+        <!-- light comes from inside -->
+        <div class="gift__light"></div>
+
+        <!-- floating surprise items -->
+        <div class="gift__surprise" id="giftSurprise">
+          <span class="surprise-item surprise-item--1">✨</span>
+          <span class="surprise-item surprise-item--2">💖</span>
+          <span class="surprise-item surprise-item--3">🌸</span>
+        </div>
+
+        <!-- LID -->
+        <div class="gift__lid">
+
+          <span class="gift__ribbon gift__ribbon--vertical"></span>
+
+          <span class="gift__bow gift__bow--left"></span>
+          <span class="gift__bow gift__bow--right"></span>
+
+          <span class="gift__knot"></span>
+
+        </div>
+
+        <!-- BODY -->
+        <div class="gift__box">
+
+          <span class="gift__ribbon gift__ribbon--vertical"></span>
+
+          <span class="gift__ribbon gift__ribbon--horizontal"></span>
+
+        </div>
+
+      </div>
+
+      <div class="page3__content">
+
+        <h1 class="page3__title">
+          Something special
+          <br>
+          is waiting for you.
+        </h1>
+
+        <p class="page3__subtitle">
+          But this is only the beginning of your little world.
+        </p>
+
+        <button
+          class="cta page3__open"
+          id="page3OpenBtn"
+          type="button">
+
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+
+            <span class="cta__label">
+              Open Your Gift ✨
+            </span>
+
+            <span class="cta__spark">✨</span>
+          </span>
+
+        </button>
+
+        <div
+          class="page3__message"
+          id="page3Message">
+
+          <p>
+            Made with love, just for you, Alfiya. ❤️
+          </p>
+
+          <button
+            class="cta page3__continue"
+            id="page3Btn"
+            type="button">
+
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+
+              <span class="cta__label">
+                Continue Our Story →
+              </span>
+
+              <span class="cta__spark">✦</span>
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 4 ================= -->
+
+    <section class="page page--flowers19"
+      data-page="4"
+      id="page-4"
+      aria-hidden="true">
+
+      <div class="flowers19__glow"></div>
+
+      <div class="flowers19__sparkles">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+      </div>
+
+      <div class="flowers19__content">
+
+        <p class="flowers19__pre">
+          A little something for you… 🌸
+        </p>
+
+        <h1 class="flowers19__title">
+          19 Little Flowers
+        </h1>
+
+        <p class="flowers19__subtitle">
+          Because 19 years deserve 19 little reasons
+          to celebrate you.
+        </p>
+
+        <div
+          class="flowers19__garden"
+          id="flowers19Garden">
+        </div>
+
+        <p
+          class="flowers19__progress"
+          id="flowers19Progress">
+          0 / 19 discovered
+        </p>
+
+        <p class="flowers19__message">
+          Each one is a little reminder of how special you are.
+        </p>
+
+        <button
+          class="cta flowers19__continue"
+          id="page4Btn"
+          type="button"
+          disabled>
+
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+
+            <span class="cta__label">
+              Discover More →
+            </span>
+
+            <span class="cta__spark">🌸</span>
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 5 ================= -->
+
+    <section class="page page--reasons"
+      data-page="5"
+      id="page-5"
+      aria-hidden="true">
+
+      <div class="reasons5__glow"></div>
+
+      <div class="reasons5__content">
+
+        <p class="reasons5__pre">
+          And now… a little closer to my heart. 💗
+        </p>
+
+        <h1 class="reasons5__title">
+          19 Reasons
+        </h1>
+
+        <p class="reasons5__subtitle">
+          19 little things that make you,
+          <span>you.</span>
+        </p>
+
+        <div
+          class="reasons5__grid"
+          id="reasonsGrid">
+        </div>
+
+        <p class="reasons5__ending">
+          And somehow, 19 reasons still don't feel like enough. ❤️
+        </p>
+
+        <button
+          class="cta reasons5__continue"
+          id="page5Btn"
+          type="button">
+
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+
+            <span class="cta__label">
+              A Message For You, Cutiepie 💌
+            </span>
+
+            <span class="cta__spark">✨</span>
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 6 ================= -->
+
+    <section class="page page--cutiepie"
+      data-page="6"
+      id="page-6"
+      aria-hidden="true">
+
+      <div class="cutiepie__glow"></div>
+
+      <div class="cutiepie__sparkles">
+        <span>✦</span>
+        <span>💖</span>
+        <span>🌸</span>
+        <span>💖</span>
+        <span>✦</span>
+      </div>
+
+      <div class="cutiepie__content">
+
+        <p class="cutiepie__pre">
+          For the sweetest girl in my world… 💌
+        </p>
+
+        <h1 class="cutiepie__title">
+          To My Dearest Cutiepie
+        </h1>
+
+        <p class="cutiepie__subtitle">
+          A little letter straight from the heart, wrapped with all the warmth you deserve. 🌸
+        </p>
+
+        <!-- ENVELOPE & LETTER CONTAINER -->
+        <div class="cutie-letter-wrapper" id="cutieLetterWrapper">
+
+          <!-- ENVELOPE -->
+          <div class="cutie-envelope" id="cutieEnvelope">
+            <div class="cutie-envelope__back"></div>
+            <div class="cutie-envelope__flap" id="cutieEnvelopeFlap"></div>
+            <div class="cutie-envelope__front"></div>
+
+            <button class="cutie-envelope__seal" id="cutieSealBtn" type="button" aria-label="Open Love Letter">
+              <span class="seal__pulse"></span>
+              <span class="seal__icon">💌</span>
+              <span class="seal__hint">Tap to open my letter ✨</span>
+            </button>
+          </div>
+
+          <!-- UNFOLDED SWEET LETTER -->
+          <article class="cutie-letter" id="cutieLetter">
+
+            <div class="cutie-letter__header">
+              <span class="cutie-letter__badge">🌸 Dearest Alfiya</span>
+              <span class="cutie-letter__date">Happy 19th Birthday ✨</span>
+            </div>
+
+            <div class="cutie-letter__paper">
+
+              <p class="cutie-letter__salutation">
+                My Sweetest Cutiepie,
+              </p>
+
+              <p class="cutie-letter__text">
+                If I had to find a single word for you, it would be <em>gentle magic</em>. There is something so effortlessly pure about the way you smile, the warmth in your voice, and how you make every regular moment feel comforting and special.
+              </p>
+
+              <p class="cutie-letter__text">
+                In a world that is always in a hurry, you have a soft soul that feels like calm after rain. You care so deeply, laugh so adorably, and bring out the best in everyone around you without even realizing it.
+              </p>
+
+              <div class="cutie-letter__quote-box">
+                <span class="quote__quote">“</span>
+                <p class="quote__text">
+                  You are not just growing a year older today; the world is celebrating 19 years of having your warmth, laughter, and kindness in it.
+                </p>
+                <span class="quote__quote quote__quote--end">”</span>
+              </div>
+
+              <p class="cutie-letter__text">
+                Never lose that sweet innocence, that playful spirit, and the beautiful light inside you. You are truly one of a kind, my favorite person, and my sweetest cutiepie forever. May your 19th chapter bring you endless giggles, peace, and every sweet blessing your heart dreams of.
+              </p>
+
+              <div class="cutie-letter__signature">
+                <p class="signature__note">With all my love & infinite warmth,</p>
+                <p class="signature__name">Forever Yours ❤️</p>
+              </div>
+
+            </div>
+
+            <!-- INTERACTIVE COMPLIMENT BADGES -->
+            <div class="cutie-stickers" id="cutieStickers">
+              <p class="stickers__title">Tap each sticker for a little sweet note 🌸</p>
+              <div class="stickers__list">
+                <button class="cute-sticker" type="button" data-compliment="Your smile can melt any bad day into pure sunshine! 😊✨">
+                  <span>🌸 Cutest Smile</span>
+                </button>
+                <button class="cute-sticker" type="button" data-compliment="You have the kindest, softest, most genuine heart. 💖">
+                  <span>✨ Kindest Soul</span>
+                </button>
+                <button class="cute-sticker" type="button" data-compliment="Everything feels so much happier and calmer when you are around! 🧸💕">
+                  <span>🧸 Cutest Cutiepie</span>
+                </button>
+                <button class="cute-sticker" type="button" data-compliment="Never forget how rare, precious, and loved you truly are. 🌟">
+                  <span>🌟 Pure Magic</span>
+                </button>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+        <button
+          class="cta cutiepie__continue"
+          id="page6Btn"
+          type="button">
+
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+
+            <span class="cta__label">
+              Open Your Birthday Wish 🎂✨
+            </span>
+
+            <span class="cta__spark">💖</span>
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 7 ================= -->
+
+    <section class="page page--cake"
+      data-page="7"
+      id="page-7"
+      aria-hidden="true">
+
+      <div class="cake__glow"></div>
+
+      <div class="cake__sparkles">
+        <span>✦</span>
+        <span>🎂</span>
+        <span>✨</span>
+        <span>💖</span>
+        <span>✦</span>
+      </div>
+
+      <div class="cake__content">
+
+        <p class="cake__pre">
+          A sweet celebration for your 19th… 🎂✨
+        </p>
+
+        <h1 class="cake__title">
+          Make a Wish, Alfiya
+        </h1>
+
+        <p class="cake__subtitle">
+          Close your eyes, think of something beautiful for your 19th year, and blow out the candles!
+        </p>
+
+        <!-- THE INTERACTIVE CAKE STAGE -->
+        <div class="cake-stage" id="cakeStage">
+
+          <div class="cake-assembly">
+
+            <!-- CANDLES SECTION -->
+            <div class="cake-candles" id="cakeCandles">
+
+              <!-- CANDLE 1 -->
+              <div class="cake-candle cake-candle--1" data-candle="1">
+                <div class="candle__flame-wrap">
+                  <div class="candle__flame">
+                    <span class="flame__core"></span>
+                    <span class="flame__halo"></span>
+                  </div>
+                  <div class="candle__smoke"></div>
+                </div>
+                <div class="candle__wick"></div>
+                <div class="candle__body candle__body--number">
+                  <span class="candle__num">1</span>
+                </div>
+              </div>
+
+              <!-- CANDLE 2 -->
+              <div class="cake-candle cake-candle--2" data-candle="2">
+                <div class="candle__flame-wrap">
+                  <div class="candle__flame">
+                    <span class="flame__core"></span>
+                    <span class="flame__halo"></span>
+                  </div>
+                  <div class="candle__smoke"></div>
+                </div>
+                <div class="candle__wick"></div>
+                <div class="candle__body candle__body--number">
+                  <span class="candle__num">9</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- TOP TIER -->
+            <div class="cake-tier cake-tier--top">
+              <div class="cake-tier__frosting-top">
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+              </div>
+              <div class="cake-tier__toppings">
+                <span class="cake-strawberry cake-strawberry--1">🍓</span>
+                <span class="cake-strawberry cake-strawberry--2">🌸</span>
+                <span class="cake-strawberry cake-strawberry--3">🍓</span>
+              </div>
+              <div class="cake-tier__wall">
+                <div class="cake-tier__cream-ribbon"></div>
+              </div>
+            </div>
+
+            <!-- BOTTOM TIER -->
+            <div class="cake-tier cake-tier--bottom">
+              <div class="cake-tier__frosting-top">
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+                <span class="frosting-drop"></span>
+              </div>
+              <div class="cake-tier__toppings cake-tier__toppings--bottom">
+                <span class="cake-strawberry">🍓</span>
+                <span class="cake-strawberry">🌸</span>
+                <span class="cake-strawberry">✨</span>
+                <span class="cake-strawberry">🌸</span>
+                <span class="cake-strawberry">🍓</span>
+              </div>
+              <div class="cake-tier__wall">
+                <div class="cake-tier__cream-ribbon"></div>
+                <div class="cake-tier__dots">
+                  <span>✦</span>
+                  <span>♥</span>
+                  <span>✦</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CAKE PEDESTAL / STAND -->
+            <div class="cake-stand">
+              <div class="cake-plate"></div>
+              <div class="cake-pedestal"></div>
+              <div class="cake-base"></div>
+            </div>
+
+          </div>
+
+          <!-- INTERACTIVE BLOW BUTTON -->
+          <div class="cake-actions" id="cakeActions">
+            <button class="cake-blow-btn" id="cakeBlowBtn" type="button">
+              <span class="blow-btn__wind">💨</span>
+              <span class="blow-btn__label">Blow Out The Candles ✨</span>
+            </button>
+            <p class="cake-blow-hint">Tip: Tap the button or tap each flame directly!</p>
+          </div>
+
+        </div>
+
+        <!-- REVEALED 19TH BIRTHDAY WISH CARD -->
+        <article class="cake-wish-card" id="cakeWishCard" aria-hidden="true">
+
+          <div class="cake-wish__sparkles">✨ 🎂 ✨</div>
+
+          <div class="cake-wish__badge">
+            <span>🌸 19th Birthday Blessing</span>
+          </div>
+
+          <h2 class="cake-wish__title">
+            May All Your Dreams Blossom 🌸
+          </h2>
+
+          <div class="cake-wish__divider"></div>
+
+          <div class="cake-wish__body">
+            <p class="cake-wish__paragraph">
+              As the candles flicker away and your wish rises to the stars, remember how deeply cherished you are. 19 is a beautiful milestone—a year for fresh beginnings, warm giggles that make your stomach hurt, and dreams that quietly begin to unfold.
+            </p>
+            <p class="cake-wish__paragraph">
+              May this chapter bring you quiet peace on hard days, boundless joy in little moments, and the courage to always shine as brightly and purely as you do right now. The world is softer and so much sweeter with you in it.
+            </p>
+          </div>
+
+          <!-- INTERACTIVE SWEET CELEBRATION TREATS -->
+          <div class="cake-treats">
+            <p class="cake-treats__title">Celebrate your wish with a sweet treat: 🍰</p>
+            <div class="cake-treats__list">
+              <button class="cake-treat-btn" id="treatSliceBtn" type="button">
+                <span>🍰 Take a Sweet Slice</span>
+              </button>
+              <button class="cake-treat-btn" id="treatBerryBtn" type="button">
+                <span>🍓 Sweet Strawberry</span>
+              </button>
+              <button class="cake-treat-btn" id="treatBlessingBtn" type="button">
+                <span>🌟 Seal With a Star</span>
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- CTA TO ADVANCE TO PAGE 8 -->
+        <button
+          class="cta cake__continue"
+          id="page7Btn"
+          type="button">
+
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+
+            <span class="cta__label">
+              Continue Down Memory Lane 📸✨
+            </span>
+
+            <span class="cta__spark">🌸</span>
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 8 ================= -->
+
+    <section class="page page--memories"
+      data-page="8"
+      id="page-8"
+      aria-hidden="true">
+
+      <div class="memories__container">
+
+        <!-- HEADER -->
+        <header class="memories__header">
+          <div class="memories__badge">
+            <span>🤝 Chapter 08 • Haath Thaame Rakhna 🌸</span>
+          </div>
+
+          <h1 class="memories__title">
+            Hamesha Tera Haath Mere Haath Me ✨
+          </h1>
+
+          <p class="memories__subtitle">
+            Chahe raaste jaise bhi hon, jab tumhara haath mere haath me hota hai, toh har safar khubsurat lagta hai.
+          </p>
+
+          <p class="memories__hint">
+            💡 <span>Tip:</span> Kisi bhi polaroid par tap karke humari secret diary note padho!
+          </p>
+        </header>
+
+        <!-- CONTROLS & FILTER BAR -->
+        <div class="memories__toolbar">
+
+          <!-- Category filter tabs -->
+          <div class="memories__categories" role="tablist" aria-label="Filter memories">
+            <button class="mem-cat-btn is-active" type="button" data-category="all">
+              <span>All Moments (4)</span>
+            </button>
+            <button class="mem-cat-btn" type="button" data-category="bracelets">
+              <span>Couple Bracelets 💖</span>
+            </button>
+            <button class="mem-cat-btn" type="button" data-category="holding">
+              <span>Holding Hands 🤝</span>
+            </button>
+            <button class="mem-cat-btn" type="button" data-category="mehndi">
+              <span>Mehndi Moments 🌿</span>
+            </button>
+          </div>
+
+          <!-- Mood / Visual Filter & Layout Mode -->
+          <div class="memories__toolbar-sub">
+            <div class="memories__moods">
+              <span class="toolbar-label">Mood Filter:</span>
+              <button class="mood-btn is-active" type="button" data-mood="rose" title="Rose Dream Aesthetic">🌸 Rose Dream</button>
+              <button class="mood-btn" type="button" data-mood="golden" title="Warm Golden Hour Sunlight">☀️ Golden Hour</button>
+              <button class="mood-btn" type="button" data-mood="vintage" title="Nostalgic Film Sepia">🎞️ Vintage Film</button>
+              <button class="mood-btn" type="button" data-mood="vivid" title="Natural Vibrance">💎 True Colors</button>
+            </div>
+
+            <div class="memories__layout-toggle">
+              <button class="layout-toggle-btn is-scattered" id="memScatterToggle" type="button" aria-label="Toggle scrapbook scatter mode">
+                <span class="layout-toggle__icon">📌</span>
+                <span class="layout-toggle__text">Scrapbook Tilt</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress / Discovery Pill -->
+          <div class="memories__progress" id="memProgressPill">
+            <span>0 / 4 moments explored ✨</span>
+          </div>
+
+        </div>
+
+        <!-- SCRAPBOOK POLAROID BOARD (COUPLE HANDS & BRACELETS) -->
+        <div class="scrapbook-board" id="scrapbookBoard">
+
+          <!-- POLAROID 1: BRACELETS CONNECTED -->
+          <div class="polaroid-wrapper" data-category="bracelets" data-id="1" style="--tilt: -2.4deg;">
+            <div class="polaroid-pin polaroid-pin--rose"></div>
+            <div class="polaroid-tape polaroid-tape--floral"></div>
+
+            <article class="polaroid-card" tabindex="0" role="region" aria-label="Memory 1: Two Hearts, One Magnet">
+              <!-- FRONT -->
+              <div class="polaroid-card__front">
+                <div class="polaroid-photo-frame polaroid-photo-frame--floral">
+                  <span class="floral-corner floral-corner--tl">🌸</span>
+                  <span class="floral-corner floral-corner--tr">🌿</span>
+                  <span class="floral-corner floral-corner--bl">🌿</span>
+                  <span class="floral-corner floral-corner--br">🌸</span>
+                  <img src="assets/images/hands_1.jpg" alt="Couple magnetic bracelets linked together" class="polaroid-img" loading="lazy" />
+                  <div class="polaroid-photo-overlay">
+                    <span class="photo-expand-badge">🔍 Tap to Zoom</span>
+                  </div>
+                </div>
+
+                <div class="polaroid-caption">
+                  <span class="polaroid-date">Our Little Promise 💫</span>
+                  <h3 class="polaroid-title">Two Hearts, One Magnet 💖</h3>
+                  <p class="polaroid-quote">"Kaha tha na, mera dil hamesha teri taraf hi aayega..."</p>
+                </div>
+
+                <div class="polaroid-actions">
+                  <button class="polaroid-action-btn polaroid-like-btn" type="button" title="Like this memory">
+                    <span class="heart-icon">❤️</span>
+                    <span class="like-count">19</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-flip-btn" type="button" title="Flip to read note">
+                    <span>Flip Note 💌</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-custom-btn" type="button" title="Upload your own photo for this memory">
+                    <span>📸 Swap</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="polaroid-card__back">
+                <div class="polaroid-back__stamp">DIL SE DIL TAK 💖</div>
+                <div class="polaroid-back__date">Memory #1 • Two Connected Hearts</div>
+                <h3 class="polaroid-back__title">Dil Se Judi Hui Dor</h3>
+                <div class="polaroid-back__text">
+                  <p>Yeh dono bracelets sirf ek cheez nahi hain, yeh humare rishte ki sabse pyari nishani hain.</p>
+                  <p>Jaise yeh dono magnets aapas me ek dusre ko dhoondh hi lete hain, waise hi mera dil bhi bas tumhari taraf hi kheencha chala aata hai. Chahe duniya me kitni bhi bheed ho, mera sukoon sirf tum ho, Alfiya. ❤️</p>
+                </div>
+                <div class="polaroid-back__sign">
+                  <span>Tera Hamesha ✦</span>
+                  <button class="polaroid-action-btn polaroid-flip-btn polaroid-flip-btn--back" type="button">
+                    <span>← See Photo</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- POLAROID 2: MATCHING BRACELETS WRISTS -->
+          <div class="polaroid-wrapper" data-category="bracelets" data-id="2" style="--tilt: 2.5deg;">
+            <div class="polaroid-pin polaroid-pin--gold"></div>
+            <div class="polaroid-tape polaroid-tape--starry"></div>
+
+            <article class="polaroid-card" tabindex="0" role="region" aria-label="Memory 2: Matching Soulstrings">
+              <!-- FRONT -->
+              <div class="polaroid-card__front">
+                <div class="polaroid-photo-frame polaroid-photo-frame--floral">
+                  <span class="floral-corner floral-corner--tl">🌷</span>
+                  <span class="floral-corner floral-corner--tr">✨</span>
+                  <span class="floral-corner floral-corner--bl">✨</span>
+                  <span class="floral-corner floral-corner--br">🌷</span>
+                  <img src="assets/images/hands_2.jpg" alt="Matching black and pink couple bracelets on wrists" class="polaroid-img" loading="lazy" />
+                  <div class="polaroid-photo-overlay">
+                    <span class="photo-expand-badge">🔍 Tap to Zoom</span>
+                  </div>
+                </div>
+
+                <div class="polaroid-caption">
+                  <span class="polaroid-date">Matching Soulstrings 🌸</span>
+                  <h3 class="polaroid-title">Black & Pink • The Perfect Pair ✨</h3>
+                  <p class="polaroid-quote">"Tumhari softness, aur mera tumhe sambhale rakhna."</p>
+                </div>
+
+                <div class="polaroid-actions">
+                  <button class="polaroid-action-btn polaroid-like-btn" type="button" title="Like this memory">
+                    <span class="heart-icon">❤️</span>
+                    <span class="like-count">24</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-flip-btn" type="button" title="Flip to read note">
+                    <span>Flip Note 💌</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-custom-btn" type="button" title="Upload your own photo for this memory">
+                    <span>📸 Swap</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="polaroid-card__back">
+                <div class="polaroid-back__stamp">PERFECT PAIR 🌸</div>
+                <div class="polaroid-back__date">Memory #2 • Black & Pink</div>
+                <h3 class="polaroid-back__title">Ek Dusre Ka Sukoon</h3>
+                <div class="polaroid-back__text">
+                  <p>Mera black bracelet, aur tumhara soft pink bracelet... Yeh photo jab bhi dekhta hu, ek ajeeb sa pyara sa sukoon milta hai.</p>
+                  <p>Lagta hai jaise hum do alag rang hain jo milkar sabse khubsurat tasveer banate hain. Jab tum mere pass hoti ho, toh sab kuch mukammal lagta hai. Hamesha aise hi sath jude rehna hai. 💫</p>
+                </div>
+                <div class="polaroid-back__sign">
+                  <span>Hamesha Tere Sath ✦</span>
+                  <button class="polaroid-action-btn polaroid-flip-btn polaroid-flip-btn--back" type="button">
+                    <span>← See Photo</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- POLAROID 3: WALKING TOGETHER ARM IN ARM -->
+          <div class="polaroid-wrapper" data-category="holding" data-id="3" style="--tilt: -1.9deg;">
+            <div class="polaroid-pin polaroid-pin--rose"></div>
+            <div class="polaroid-tape polaroid-tape--amber"></div>
+
+            <article class="polaroid-card" tabindex="0" role="region" aria-label="Memory 3: Walking Hand in Hand">
+              <!-- FRONT -->
+              <div class="polaroid-card__front">
+                <div class="polaroid-photo-frame polaroid-photo-frame--floral">
+                  <span class="floral-corner floral-corner--tl">🌹</span>
+                  <span class="floral-corner floral-corner--tr">🌿</span>
+                  <span class="floral-corner floral-corner--bl">🌿</span>
+                  <span class="floral-corner floral-corner--br">🌹</span>
+                  <img src="assets/images/hands_3.jpg" alt="Holding arms lovingly in traditional attire" class="polaroid-img" loading="lazy" />
+                  <div class="polaroid-photo-overlay">
+                    <span class="photo-expand-badge">🔍 Tap to Zoom</span>
+                  </div>
+                </div>
+
+                <div class="polaroid-caption">
+                  <span class="polaroid-date">Sath Sath Chalte Hue 🌷</span>
+                  <h3 class="polaroid-title">Tera Haath Thaame Chalna Hai 🤝</h3>
+                  <p class="polaroid-quote">"Zindagi ke har mod par bas tera sath chahiye."</p>
+                </div>
+
+                <div class="polaroid-actions">
+                  <button class="polaroid-action-btn polaroid-like-btn" type="button" title="Like this memory">
+                    <span class="heart-icon">❤️</span>
+                    <span class="like-count">31</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-flip-btn" type="button" title="Flip to read note">
+                    <span>Flip Note 💌</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-custom-btn" type="button" title="Upload your own photo for this memory">
+                    <span>📸 Swap</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="polaroid-card__back">
+                <div class="polaroid-back__stamp">HUMSAFAR 🌷</div>
+                <div class="polaroid-back__date">Memory #3 • Walking Side by Side</div>
+                <h3 class="polaroid-back__title">Zindagi Bhar Ka Sath</h3>
+                <div class="polaroid-back__text">
+                  <p>Jab tumne mera haath aise pakad rakha tha, sach bataun toh lagta tha ki saari duniya ki khushiyan mere pass hain.</p>
+                  <p>Na koi darr tha, na koi fikar... bas tumhara sparsh aur ek meethi si muskaan. Chahe zindagi ka safar kaisa bhi ho, har kadam par tera haath thaam kar chalna chahta hu. 🌹</p>
+                </div>
+                <div class="polaroid-back__sign">
+                  <span>Humsafar Hamesha ✦</span>
+                  <button class="polaroid-action-btn polaroid-flip-btn polaroid-flip-btn--back" type="button">
+                    <span>← See Photo</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- POLAROID 4: MEHNDI SOFT HANDS -->
+          <div class="polaroid-wrapper" data-category="mehndi" data-id="4" style="--tilt: 2.1deg;">
+            <div class="polaroid-pin polaroid-pin--mint"></div>
+            <div class="polaroid-tape polaroid-tape--mint"></div>
+
+            <article class="polaroid-card" tabindex="0" role="region" aria-label="Memory 4: Soft Mehndi Hand in Hand">
+              <!-- FRONT -->
+              <div class="polaroid-card__front">
+                <div class="polaroid-photo-frame polaroid-photo-frame--floral">
+                  <span class="floral-corner floral-corner--tl">🌸</span>
+                  <span class="floral-corner floral-corner--tr">🌿</span>
+                  <span class="floral-corner floral-corner--bl">🌿</span>
+                  <span class="floral-corner floral-corner--br">🌸</span>
+                  <img src="assets/images/hands_4.jpg" alt="Holding soft mehndi decorated hands together" class="polaroid-img" loading="lazy" />
+                  <div class="polaroid-photo-overlay">
+                    <span class="photo-expand-badge">🔍 Tap to Zoom</span>
+                  </div>
+                </div>
+
+                <div class="polaroid-caption">
+                  <span class="polaroid-date">Mehndi & Tender Warmth 🌿</span>
+                  <h3 class="polaroid-title">Naram Haath, Pyara Ehsaas ❤️</h3>
+                  <p class="polaroid-quote">"Tumhara ek sparsh, meri poori duniya ka sukoon."</p>
+                </div>
+
+                <div class="polaroid-actions">
+                  <button class="polaroid-action-btn polaroid-like-btn" type="button" title="Like this memory">
+                    <span class="heart-icon">❤️</span>
+                    <span class="like-count">29</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-flip-btn" type="button" title="Flip to read note">
+                    <span>Flip Note 💌</span>
+                  </button>
+                  <button class="polaroid-action-btn polaroid-custom-btn" type="button" title="Upload your own photo for this memory">
+                    <span>📸 Swap</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- BACK -->
+              <div class="polaroid-card__back">
+                <div class="polaroid-back__stamp">MEHNDI KI KHUSHBOO 🌿</div>
+                <div class="polaroid-back__date">Memory #4 • Gentle Touch</div>
+                <h3 class="polaroid-back__title">Mera Sabse Pyara Lamha</h3>
+                <div class="polaroid-back__text">
+                  <p>Tumhare naram haathon par saji hui yeh pyari si mehndi, aur un ungliyon ka mere haath me hona... yeh lamha mere dil me hamesha ke liye qaid ho gaya hai.</p>
+                  <p>Jab tumhara haath mere haath me hota hai, tab sab theek lagta hai. Happy 19th Birthday to the most special person in my life! ❤️</p>
+                </div>
+                <div class="polaroid-back__sign">
+                  <span>Forever Treasured ✦</span>
+                  <button class="polaroid-action-btn polaroid-flip-btn polaroid-flip-btn--back" type="button">
+                    <span>← See Photo</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- INTERACTIVE "PIN A SWEET MEMORY" STICKY NOTE SECTION -->
+        <section class="scrapbook-sticky-zone">
+          <div class="sticky-note">
+            <div class="sticky-pin">📌</div>
+            <h3 class="sticky-title">Pin A Special Memory Or Wish ✍️</h3>
+            <p class="sticky-desc">Yahan apni koi pyari baat ya yaad likh kar board par pin karo!</p>
+            <form class="sticky-form" id="stickyMemoryForm">
+              <input type="text" class="sticky-input" id="stickyInputTitle" placeholder="Memory Title (e.g. Pehli Baar Haath Pakadna)" maxlength="45" required />
+              <textarea class="sticky-textarea" id="stickyInputText" placeholder="Write a sweet thought or memory here..." rows="3" maxlength="250" required></textarea>
+              <div class="sticky-actions">
+                <button type="submit" class="sticky-submit-btn">
+                  <span>Pin To Memory Lane 📌</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- User Pinned Notes Container -->
+          <div class="user-notes-board" id="userNotesBoard"></div>
+        </section>
+
+        <!-- PAGE 8 CTA BUTTON (LEADS TO PAGE 9: EYES & SMILE) -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue" id="page8Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Next: Her Eyes & Her Smile ✨→
+              </span>
+              <span class="cta__spark">🌸</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">Ab uski aankhon aur pyari si muskaan ki baatein… 💖</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 9 ================= -->
+
+    <section class="page page--eyes-smile"
+      data-page="9"
+      id="page-9"
+      aria-hidden="true">
+
+      <div class="eyes-smile__container">
+
+        <!-- HEADER -->
+        <header class="eyes-smile__header">
+          <div class="memories__badge">
+            <span>✨ Chapter 09 • The Two Things That Stole My Heart 💖</span>
+          </div>
+
+          <h1 class="eyes-smile__title">
+            Teri Aankhein Aur Wo Pyari Si Muskaan ✨
+          </h1>
+
+          <p class="eyes-smile__subtitle">
+            Duniya me kitni bhi khoobsurti ho Alfiya, par meri poori kayanaat sirf tumhari aankhon aur is bholi si muskaan me basi hai.
+          </p>
+
+          <p class="memories__hint">
+            🌸 <span>Interactive Showcase:</span> Tap the cards below to feel the magic & reveal special thoughts.
+          </p>
+        </header>
+
+        <!-- CARDS GRID (DUAL SHOWCASE: EYES & SMILE) -->
+        <div class="eyes-smile__grid">
+
+          <!-- CARD 1: HER EYES -->
+          <div class="eyes-card" id="cardEyes" data-type="eyes">
+            <div class="eyes-card__header">
+              <span class="eyes-card__pill">👁️ The Starlit Gaze</span>
+              <span class="eyes-card__spark">✨</span>
+            </div>
+
+            <div class="eyes-card__frame" id="eyesFrame">
+              <span class="floral-corner floral-corner--tl">✨</span>
+              <span class="floral-corner floral-corner--tr">🌙</span>
+              <span class="floral-corner floral-corner--bl">⭐</span>
+              <span class="floral-corner floral-corner--br">🌸</span>
+
+              <!-- Image element -->
+              <img class="eyes-card__img" id="eyesImg" src="assets/images/eyes.jpg" alt="Alfiya's mesmerizing eyes" />
+
+              <!-- Placeholder when waiting for photo -->
+              <div class="eyes-card__placeholder" id="eyesPlaceholder" style="display:none;">
+                <span class="placeholder-icon">👁️</span>
+                <span class="placeholder-text">Alfiya's Beautiful Eyes</span>
+                <span class="placeholder-sub">Send her eye photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Her Eyes">
+                  <span>📸 Upload Eyes Pic</span>
+                  <input type="file" class="eyes-photo-input" data-target="eyes" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+
+              <!-- Overlay badge if photo is present -->
+              <button class="eyes-card__change-btn" id="changeEyesBtn" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+
+            <div class="eyes-card__content">
+              <h3 class="eyes-card__name">Teri Gehari, Noorani Aankhein</h3>
+              <p class="eyes-card__shayari">
+                "Teri aankhon me doob kar waqt tham sa jata hai,<br>
+                Jaise hazaron sitare ek sath aakar muskura rahe hon."
+              </p>
+              <div class="eyes-card__tags">
+                <span class="micro-tag">Expressive 💫</span>
+                <span class="micro-tag">Pure Innocence 🕊️</span>
+                <span class="micro-tag">Universe of Stars 🌌</span>
+              </div>
+              <button class="eyes-card__react-btn" id="eyesReactBtn" type="button">
+                <span>✨ Feel Her Gaze</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2: HER SMILE -->
+          <div class="eyes-card eyes-card--smile" id="cardSmile" data-type="smile">
+            <div class="eyes-card__header">
+              <span class="eyes-card__pill">🌸 The Sunshine Smile</span>
+              <span class="eyes-card__spark">💖</span>
+            </div>
+
+            <div class="eyes-card__frame" id="smileFrame">
+              <span class="floral-corner floral-corner--tl">🌺</span>
+              <span class="floral-corner floral-corner--tr">💖</span>
+              <span class="floral-corner floral-corner--bl">🌷</span>
+              <span class="floral-corner floral-corner--br">✨</span>
+
+              <!-- Image element -->
+              <img class="eyes-card__img" id="smileImg" src="assets/images/smile.jpg" alt="Alfiya's radiant smile" />
+
+              <!-- Placeholder when waiting for photo -->
+              <div class="eyes-card__placeholder" id="smilePlaceholder" style="display:none;">
+                <span class="placeholder-icon">😊</span>
+                <span class="placeholder-text">Alfiya's Sweetest Smile</span>
+                <span class="placeholder-sub">Send her smiling photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Her Smile">
+                  <span>📸 Upload Smile Pic</span>
+                  <input type="file" class="eyes-photo-input" data-target="smile" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+
+              <!-- Overlay badge if photo is present -->
+              <button class="eyes-card__change-btn" id="changeSmileBtn" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+
+            <div class="eyes-card__content">
+              <h3 class="eyes-card__name">Wo Pyari Aur Bholi Muskaan</h3>
+              <p class="eyes-card__shayari">
+                "Tum hasti ho toh lagta hai har mausam me bahaar aa gayi,<br>
+                Tumhari ek muskaan mere har bure din ko roshan kar deti hai."
+              </p>
+              <div class="eyes-card__tags">
+                <span class="micro-tag">Heartwarming ☀️</span>
+                <span class="micro-tag">Cutest Laugh 🌸</span>
+                <span class="micro-tag">My Favorite View 💖</span>
+              </div>
+              <button class="eyes-card__react-btn" id="smileReactBtn" type="button">
+                <span>🌸 Catch Her Smile</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CUTE INTERACTIVE COMPLIMENTS STRIP -->
+        <div class="eyes-compliments">
+          <p class="eyes-compliments__title">Little Things I Adore About You 💭</p>
+          <div class="eyes-compliments__list">
+            <button class="eyes-compliment-chip" type="button" data-msg="Jab tum gusse me aankhein badi karti ho na... bohot pyari lagti ho! 🙈">
+              <span>👀 The Playful Eye Roll</span>
+            </button>
+            <button class="eyes-compliment-chip" type="button" data-msg="Jab tum sharma kar aankhein jhuka leti ho, dil pighal jata hai! 💖">
+              <span>🙈 The Shy Glance</span>
+            </button>
+            <button class="eyes-compliment-chip" type="button" data-msg="Wo hasi jisme tumhara poora chehra khil uthta hai... priceless! 🌸">
+              <span>😂 The Heartfelt Laughter</span>
+            </button>
+            <button class="eyes-compliment-chip" type="button" data-msg="Hamesha aise hi khush rehna Alfiya, tumhari muskaan hi meri sabse badi khushi hai! ✨">
+              <span>✨ The Radiant Dimple Vibe</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CTA TO FINALE MODAL -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue" id="page9Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Next: Alfiya's Cute Moments 🌸→
+              </span>
+              <span class="cta__spark">🎂</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">Aage Alfiya ke pyare lamhe intezaar kar rahe hain… 💖</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 10 ================= -->
+
+    <section class="page page--alfiya"
+      data-page="10"
+      id="page-10"
+      aria-hidden="true">
+
+      <div class="alfiya-page__container">
+
+        <!-- HEADER -->
+        <header class="alfiya-page__header">
+          <div class="memories__badge">
+            <span>🌸 Chapter 10 • Alfiya's World ✨</span>
+          </div>
+
+          <h1 class="alfiya-page__title">
+            The Prettiest Smile In The World 🌸
+          </h1>
+
+          <p class="alfiya-page__subtitle">
+            Tumhari har muskaan, har choti ada, aur wo pyari si hansi jo har din ko khubsurat bana deti hai.
+          </p>
+
+          <p class="memories__hint">
+            💌 <span>Alfiya's Corner:</span> Dedicated to the girl who brings all the light into my world.
+          </p>
+        </header>
+
+        <!-- CUTE GALLERY GRID -->
+        <div class="alfiya-grid" id="alfiyaGrid">
+
+          <!-- Card 1 -->
+          <div class="alfiya-card" data-card="1">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🌸</span>
+              <span class="floral-corner floral-corner--tr">✨</span>
+              <img class="alfiya-card__img" id="alfiyaImg1" src="assets/images/alfiya_1.jpg" alt="Alfiya's cute photo #1" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder1" style="display:none;">
+                <span class="placeholder-icon">🌸</span>
+                <span class="placeholder-text">Wo Pyari Si Muskaan</span>
+                <span class="placeholder-sub">Send her smiling photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 1">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="1" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="1" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Pure Innocence 🌸</span>
+              <h3 class="alfiya-card__title">Wo Pyari Si Muskaan</h3>
+              <p class="alfiya-card__note">
+                "Tum jab hasti ho na Alfiya, lagta hai saare phool ek sath khil gaye hon."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="alfiya-card" data-card="2">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🌷</span>
+              <span class="floral-corner floral-corner--tr">💖</span>
+              <img class="alfiya-card__img" id="alfiyaImg2" src="assets/images/alfiya_2.jpg" alt="Alfiya's cute photo #2" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder2" style="display:none;">
+                <span class="placeholder-icon">🙈</span>
+                <span class="placeholder-text">Nakhre Aur Shararat</span>
+                <span class="placeholder-sub">Send her playful / cute expression pic!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 2">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="2" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="2" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Gentle Soul ✨</span>
+              <h3 class="alfiya-card__title">Nakhre Aur Shararat</h3>
+              <p class="alfiya-card__note">
+                "Tumhare chote chote nakhre aur wo bholapan... mere dil ki sabse pyari kamzori hai."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="alfiya-card" data-card="3">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🌺</span>
+              <span class="floral-corner floral-corner--tr">✨</span>
+              <img class="alfiya-card__img" id="alfiyaImg3" src="assets/images/alfiya_3.jpg" alt="Alfiya's cute photo #3" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder3" style="display:none;">
+                <span class="placeholder-icon">👑</span>
+                <span class="placeholder-text">Hamesha Aise Hi Chamakna</span>
+                <span class="placeholder-sub">Send her prettiest birthday/dress-up pic!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 3">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="3" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="3" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Radiant 19 🎂</span>
+              <h3 class="alfiya-card__title">Hamesha Aise Hi Chamakna</h3>
+              <p class="alfiya-card__note">
+                "19 saal ki ho gayi ho, par mere liye wahi sabse pyari aur masoom Alfiya rahogi."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="alfiya-card" data-card="4">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">✨</span>
+              <span class="floral-corner floral-corner--tr">💫</span>
+              <img class="alfiya-card__img" id="alfiyaImg4" src="assets/images/alfiya_4.jpg" alt="Alfiya in pink princess gown" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder4" style="display:none;">
+                <span class="placeholder-icon">🌸</span>
+                <span class="placeholder-text">Gulabi Noor</span>
+                <span class="placeholder-sub">Send her photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 4">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="4" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="4" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Princess Vibe 🌸</span>
+              <h3 class="alfiya-card__title">Gulabi Noor</h3>
+              <p class="alfiya-card__note">
+                "Is gulabi libas me lag raha hai jaise koi pari zameen par utar aayi ho."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="alfiya-card" data-card="5">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">💖</span>
+              <span class="floral-corner floral-corner--tr">🌸</span>
+              <img class="alfiya-card__img" id="alfiyaImg5" src="assets/images/alfiya_5.jpg" alt="Alfiya in yellow traditional selfie" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder5" style="display:none;">
+                <span class="placeholder-icon">💛</span>
+                <span class="placeholder-text">Pehli Nazar Ka Jaadu</span>
+                <span class="placeholder-sub">Send her photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 5">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="5" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="5" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Warm Glow 💛</span>
+              <h3 class="alfiya-card__title">Pehli Nazar Ka Jaadu</h3>
+              <p class="alfiya-card__note">
+                "Tumhara bholapan aur ye pyari muskaan... har baar dil chura leti hai."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="alfiya-card" data-card="6">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🌷</span>
+              <span class="floral-corner floral-corner--tr">✨</span>
+              <img class="alfiya-card__img" id="alfiyaImg6" src="assets/images/alfiya_6.jpg" alt="Alfiya with red dupatta and glasses" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder6" style="display:none;">
+                <span class="placeholder-icon">🧿</span>
+                <span class="placeholder-text">Sadgi Me Husn</span>
+                <span class="placeholder-sub">Send her photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 6">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="6" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="6" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Nazar Na Lage 🧿</span>
+              <h3 class="alfiya-card__title">Sadgi Me Husn</h3>
+              <p class="alfiya-card__note">
+                "Bina kisi koshish ke bhi tum itni behad khubsurat lagti ho Alfiya."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="alfiya-card" data-card="7">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🍁</span>
+              <span class="floral-corner floral-corner--tr">✨</span>
+              <img class="alfiya-card__img" id="alfiyaImg7" src="assets/images/alfiya_7.jpg" alt="Alfiya aesthetic rooftop twirl with maroon shawl" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder7" style="display:none;">
+                <span class="placeholder-icon">🍁</span>
+                <span class="placeholder-text">Hawaon Ka Rukh</span>
+                <span class="placeholder-sub">Send her photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 7">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="7" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="7" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Poetry In Motion 🍁</span>
+              <h3 class="alfiya-card__title">Hawaon Ka Rukh</h3>
+              <p class="alfiya-card__note">
+                "Hawa ke sath lehrata hua dupatta aur ye beparwah khubsurti... bilkul kisi film jaisi."
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="alfiya-card" data-card="8">
+            <div class="alfiya-card__frame">
+              <span class="floral-corner floral-corner--tl">🌻</span>
+              <span class="floral-corner floral-corner--tr">✨</span>
+              <img class="alfiya-card__img" id="alfiyaImg8" src="assets/images/alfiya_8.jpg" alt="Alfiya sunflower aesthetic collage" />
+              <div class="alfiya-card__placeholder" id="alfiyaPlaceholder8" style="display:none;">
+                <span class="placeholder-icon">🌻</span>
+                <span class="placeholder-text">Sunflower Sunshine</span>
+                <span class="placeholder-sub">Send her photo to place here!</span>
+                <label class="eyes-card__upload-btn" title="Choose photo for Card 8">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="alfiya-photo-input" data-card="8" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn alfiya-change-btn" data-card="8" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="alfiya-card__content">
+              <span class="alfiya-card__tag">Golden Aesthetic 🌻✨</span>
+              <h3 class="alfiya-card__title">Sunflower Sunshine</h3>
+              <p class="alfiya-card__note">
+                "Jaise surajmukhi dhoop dhoondta hai, waise hi mera dil tumhari muskaan dhoondta hai."
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA TO PAGE 10 -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue" id="page10Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Next: Our Best Couple Moments 💑→
+              </span>
+              <span class="cta__spark">❤️</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">Ab humari sabse pyari couple memories ka time hai…</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 11 ================= -->
+
+    <section class="page page--couple"
+      data-page="11"
+      id="page-11"
+      aria-hidden="true">
+
+      <div class="couple-page__container">
+
+        <!-- HEADER -->
+        <header class="couple-page__header">
+          <div class="memories__badge">
+            <span>💑 Chapter 11 • Two Hearts, One Story ❤️</span>
+          </div>
+
+          <h1 class="couple-page__title">
+            Humari Sabse Khubsurat Yaadein ✨
+          </h1>
+
+          <p class="couple-page__subtitle">
+            Har tasveer me ek kahani hai, aur har kahani me sirf tum aur mai.
+          </p>
+
+          <p class="memories__hint">
+            🌹 <span>Hamari Story:</span> Jo lamhe humne sath jiye hain, wo meri zindagi ke sabse anmol panne hain.
+          </p>
+        </header>
+
+        <!-- COUPLE SHOWCASE GRID -->
+        <div class="couple-grid" id="coupleGrid">
+
+          <!-- Couple Card 1 -->
+          <div class="couple-card has-photo" data-card="1">
+            <div class="couple-card__frame">
+              <span class="floral-corner floral-corner--tl">🌹</span>
+              <span class="floral-corner floral-corner--tr">❤️</span>
+              <img class="couple-card__img" id="coupleImg1" src="assets/images/couple_1.jpg" alt="Our sweet dance on the rooftop" />
+              <div class="couple-card__placeholder" id="couplePlaceholder1" style="display:none;">
+                <span class="placeholder-icon">💑</span>
+                <span class="placeholder-text">Jab Hum Sath Hote Hain</span>
+                <span class="placeholder-sub">Send your favorite couple pic!</span>
+                <label class="eyes-card__upload-btn" title="Choose couple photo #1">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="couple-photo-input" data-card="1" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn couple-change-btn" data-card="1" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="couple-card__details">
+              <h3 class="couple-card__title">Jab Hum Sath Hote Hain ✨</h3>
+              <p class="couple-card__quote">"Waqt tham sa jata hai jab tum sath hoti ho."</p>
+            </div>
+          </div>
+
+          <!-- Couple Card 2 -->
+          <div class="couple-card has-photo" data-card="2">
+            <div class="couple-card__frame">
+              <span class="floral-corner floral-corner--tl">💖</span>
+              <span class="floral-corner floral-corner--tr">🌹</span>
+              <img class="couple-card__img" id="coupleImg2" src="assets/images/couple_2.jpg" alt="Two hearts smiling together" />
+              <div class="couple-card__placeholder" id="couplePlaceholder2" style="display:none;">
+                <span class="placeholder-icon">💑</span>
+                <span class="placeholder-text">Ek Dusre Ka Sahara</span>
+                <span class="placeholder-sub">Send your cute together pic!</span>
+                <label class="eyes-card__upload-btn" title="Choose couple photo #2">
+                  <span>📸 Upload Photo</span>
+                  <input type="file" class="couple-photo-input" data-card="2" accept="image/*" style="display:none;" />
+                </label>
+              </div>
+              <button class="eyes-card__change-btn couple-change-btn" data-card="2" type="button" title="Change photo">
+                📸 Change Photo
+              </button>
+            </div>
+            <div class="couple-card__details">
+              <h3 class="couple-card__title">Ek Dusre Ka Sahara ❤️</h3>
+              <p class="couple-card__quote">"Har khushi me tumhara sath, har mod par tera haath."</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA TO PAGE 12 (MUSIC PAGE) -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue" id="page11Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Next: Our Songs & Melodies 🎵→
+              </span>
+              <span class="cta__spark">🎶</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">Ab chalte hain humari pyari dhuno aur geeto ki taraf… 🎧</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 12 (MUSIC PAGE) ================= -->
+
+    <section class="page page--music"
+      data-page="12"
+      id="page-12"
+      aria-hidden="true">
+
+      <div class="music-page__container">
+
+        <!-- HEADER -->
+        <header class="music-page__header">
+          <div class="music-header-top-row">
+            <div class="memories__badge">
+              <span>🎵 Chapter 12 • The Sound of You & Us 🎧</span>
+            </div>
+            <button class="music-top-next-btn" id="musicHeaderNextBtn" type="button" title="Jump to next page">
+              <span>Next Page 💌→</span>
+            </button>
+          </div>
+
+          <h1 class="music-page__title">
+            Hamare Gaane & Dil Ki Dhun ✨
+          </h1>
+
+          <p class="music-page__subtitle">
+            Kuch geet aise hote hain jo lafzon se zyada keh jaate hain… Play a song and feel the magic.
+          </p>
+
+          <p class="memories__hint">
+            🎶 <span>Special Dedication:</span> Har sur me tumhari muskaan ki khushbu hai, har dhun me tumhara ehsaas hai.
+          </p>
+        </header>
+
+        <!-- MUSIC PLAYER SHOWCASE -->
+        <div class="music-player-card">
+
+          <!-- TOP STATUS BAR -->
+          <div class="music-player__status-bar">
+            <div class="music-live-badge">
+              <span class="live-dot"></span>
+              <span>ALFIYA'S FM 99.1 💕</span>
+            </div>
+            <div class="music-mode-pill">
+              <span>🎧 Romantic 3D Acoustics</span>
+            </div>
+          </div>
+
+          <!-- TURNTABLE & VINYL DISC ZONE -->
+          <div class="turntable-zone">
+            <div class="turntable-deck" id="turntableDeck">
+              <!-- Glow behind turntable -->
+              <div class="turntable-glow" id="turntableGlow"></div>
+
+              <!-- Turntable Platter & Vinyl Record -->
+              <div class="turntable-platter">
+                <div class="vinyl-record" id="vinylRecord">
+                  <!-- Vinyl Grooves Rings -->
+                  <div class="vinyl-groove vinyl-groove--1"></div>
+                  <div class="vinyl-groove vinyl-groove--2"></div>
+                  <div class="vinyl-groove vinyl-groove--3"></div>
+                  <div class="vinyl-groove vinyl-groove--4"></div>
+                  <div class="vinyl-sheen"></div>
+
+                  <!-- Center Vinyl Label / Album Sticker -->
+                  <div class="vinyl-label" id="vinylLabel">
+                    <img class="vinyl-label__img" id="vinylLabelImg" src="assets/images/smile.jpg" alt="Alfiya's Special Album Art" />
+                    <div class="vinyl-label__overlay">
+                      <span class="vinyl-label__title">Alfiya • 19</span>
+                      <span class="vinyl-label__subtitle">Love Beats</span>
+                    </div>
+                    <div class="vinyl-spindle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Realistic Tonearm with Stylus Needle -->
+              <div class="turntable-tonearm-assembly" id="tonearmAssembly">
+                <div class="tonearm-base">
+                  <div class="tonearm-pivot"></div>
+                  <div class="tonearm-counterweight"></div>
+                </div>
+                <div class="tonearm-bar">
+                  <div class="tonearm-cartridge">
+                    <span class="tonearm-needle-glow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AUDIO VISUALIZER BARS -->
+          <div class="music-visualizer" id="musicVisualizer" aria-hidden="true">
+            <span class="eq-bar eq-bar--1"></span>
+            <span class="eq-bar eq-bar--2"></span>
+            <span class="eq-bar eq-bar--3"></span>
+            <span class="eq-bar eq-bar--4"></span>
+            <span class="eq-bar eq-bar--5"></span>
+            <span class="eq-bar eq-bar--6"></span>
+            <span class="eq-bar eq-bar--7"></span>
+            <span class="eq-bar eq-bar--8"></span>
+            <span class="eq-bar eq-bar--9"></span>
+            <span class="eq-bar eq-bar--10"></span>
+            <span class="eq-bar eq-bar--11"></span>
+            <span class="eq-bar eq-bar--12"></span>
+            <span class="eq-bar eq-bar--13"></span>
+            <span class="eq-bar eq-bar--14"></span>
+            <span class="eq-bar eq-bar--15"></span>
+            <span class="eq-bar eq-bar--16"></span>
+          </div>
+
+          <!-- TRACK INFO CARD -->
+          <div class="music-track-info">
+            <span class="music-track-badge" id="musicTrackBadge">Now Playing 🎵</span>
+            <h2 class="music-track-title" id="musicTrackTitle">Love Story • Indila</h2>
+            <p class="music-track-artist" id="musicTrackArtist">Mini World • Dedicated to Alfiya 🌸</p>
+            <p class="music-track-quote" id="musicTrackQuote">"Une histoire d'amour, un cri du cœur... C'est ma dernière danse, mon dernier souffle..."</p>
+          </div>
+
+          <!-- SCRUBBER & TIMESTAMPS -->
+          <div class="music-scrubber-zone">
+            <span class="music-time" id="musicCurrentTime">0:00</span>
+            <div class="music-scrubber-track">
+              <input type="range" class="music-scrubber-input" id="musicProgressBar" min="0" max="100" value="0" step="0.1" aria-label="Song progress" />
+              <div class="music-scrubber-fill" id="musicProgressFill" style="width: 0%;"></div>
+            </div>
+            <span class="music-time" id="musicDuration">1:34</span>
+          </div>
+
+          <!-- MAIN CONTROLS ROW -->
+          <div class="music-controls">
+            <button class="music-ctrl-btn music-ctrl-btn--secondary" id="musicLoopBtn" type="button" title="Loop Track" aria-label="Toggle loop">
+              🔁
+            </button>
+
+            <button class="music-ctrl-btn music-ctrl-btn--skip" id="musicPrevBtn" type="button" title="Previous Track" aria-label="Previous track">
+              ⏮
+            </button>
+
+            <button class="music-play-btn" id="musicPlayBtn" type="button" title="Play or Pause" aria-label="Play song">
+              <span class="music-play-btn__glow"></span>
+              <span class="music-play-icon" id="musicPlayIcon">▶</span>
+            </button>
+
+            <button class="music-ctrl-btn music-ctrl-btn--skip" id="musicNextBtn" type="button" title="Next Track" aria-label="Next track">
+              ⏭
+            </button>
+
+            <div class="music-volume-box">
+              <button class="music-ctrl-btn music-ctrl-btn--vol" id="musicMuteBtn" type="button" title="Mute/Unmute" aria-label="Mute toggle">
+                🔊
+              </button>
+              <input type="range" class="music-volume-slider" id="musicVolumeSlider" min="0" max="1" step="0.05" value="0.85" aria-label="Volume slider" />
+            </div>
+          </div>
+
+          <!-- ACTIONS: UPLOAD CUSTOM MP3 & MELODY MODE -->
+          <div class="music-extra-actions">
+            <label class="music-action-chip" title="Choose any MP3 file from your device">
+              <span>📂 Choose Any Song (MP3)</span>
+              <input type="file" id="musicFileInput" accept="audio/*" style="display:none;" />
+            </label>
+            <button class="music-action-chip" id="musicSynthesizerBtn" type="button" title="Play Track 6: Kaun Tujhe">
+              <span>💖 Play "Kaun Tujhe"</span>
+            </button>
+          </div>
+
+          <!-- PROMINENT NEXT PAGE OPTION (TOGETHER WITH MUSIC PLAYER) -->
+          <div class="music-player-next-box">
+            <button class="cta music-quick-next" id="musicQuickNextBtn" type="button">
+              <span class="cta__surface">
+                <span class="cta__shimmer"></span>
+                <span class="cta__label">
+                  Next: Ek Aakhri Baat Jo Dil Mein Hai 💌→
+                </span>
+                <span class="cta__spark">✨</span>
+              </span>
+            </button>
+            <p class="music-player-next-hint">Gaana chalta rahega, aage badhein aur dil ki baat dekhein ✨</p>
+          </div>
+
+          <!-- HIDDEN AUDIO ELEMENT -->
+          <audio id="musicAudioPlayer" src="assets/music/love_story.mp3" preload="auto"></audio>
+
+        </div>
+
+        <!-- ROMANTIC PLAYLIST CAROUSEL / SELECTOR -->
+        <div class="music-playlist-section">
+          <div class="music-playlist__heading">
+            <span class="music-playlist__icon">💖</span>
+            <h3 class="music-playlist__title">Alfiya's Special Tracklist</h3>
+            <span class="music-playlist__hint">Main Lines & Iconic Choruses 🎧</span>
+          </div>
+
+          <div class="music-playlist-grid" id="musicPlaylistGrid">
+
+            <!-- Track 1: Love Story by Indila -->
+            <div class="playlist-card is-active" data-track-index="0" data-title="Love Story" data-artist="Indila" data-quote="Une histoire d'amour, un cri du cœur... C'est ma dernière danse, mon dernier souffle..." data-src="assets/music/love_story.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">01</span>
+                <span class="playlist-card__icon">🌹</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Love Story</h4>
+                <p class="playlist-card__desc">Indila • "Une histoire d'amour, un cri du cœur..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Playing 🎧</span>
+              </div>
+            </div>
+
+            <!-- Track 2: Tum Se Hi -->
+            <div class="playlist-card" data-track-index="1" data-title="Tum Se Hi" data-artist="Pritam & Mohit Chauhan" data-quote="Tum se hi din hota hai, surmaiye shaam aati hai... Tum se hi, tum se hi..." data-src="assets/music/tum_se_hi.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">02</span>
+                <span class="playlist-card__icon">🎵</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Tum Se Hi</h4>
+                <p class="playlist-card__desc">Jab We Met • "Tum se hi din hota hai..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Tap to Play</span>
+              </div>
+            </div>
+
+            <!-- Track 3: Kesariya Tera Ishq -->
+            <div class="playlist-card" data-track-index="2" data-title="Kesariya Tera Ishq" data-artist="Arijit Singh & Pritam" data-quote="Kesariya tera ishq hai piya, rang jaaun jo main haath lagaun..." data-src="assets/music/kesariya.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">03</span>
+                <span class="playlist-card__icon">✨</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Kesariya Tera Ishq</h4>
+                <p class="playlist-card__desc">Brahmastra • "Kesariya tera ishq hai piya..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Tap to Play</span>
+              </div>
+            </div>
+
+            <!-- Track 4: Raataan Lambiyan -->
+            <div class="playlist-card" data-track-index="3" data-title="Raataan Lambiyan" data-artist="Jubin Nautiyal & Asees Kaur" data-quote="Teri meri gallan ho gayi mashhoor, kar na kabhi tu mujhe nazron se door..." data-src="assets/music/raataan.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">04</span>
+                <span class="playlist-card__icon">🌙</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Raataan Lambiyan</h4>
+                <p class="playlist-card__desc">Shershaah • "Teri meri gallan ho gayi mashhoor..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Tap to Play</span>
+              </div>
+            </div>
+
+            <!-- Track 5: Apna Bana Le -->
+            <div class="playlist-card" data-track-index="4" data-title="Apna Bana Le" data-artist="Arijit Singh & Sachin-Jigar" data-quote="Apna bana le piya, apna bana le piya... Dil ke nagar mein shahar tu basa le piya..." data-src="assets/music/apna_bana_le.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">05</span>
+                <span class="playlist-card__icon">💞</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Apna Bana Le</h4>
+                <p class="playlist-card__desc">Bhediya • "Apna bana le piya..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Tap to Play</span>
+              </div>
+            </div>
+
+            <!-- Track 6: Kaun Tujhe -->
+            <div class="playlist-card" data-track-index="5" data-title="Kaun Tujhe" data-artist="Palak Muchhal & Amaal Mallik" data-quote="Tu aata hai seene mein, jab jab saansein bharta hoon... Kaun tujhe yun pyar karega jaise main karta hoon..." data-src="assets/music/kaun_tujhe.mp3">
+              <div class="playlist-card__left">
+                <span class="playlist-card__num">06</span>
+                <span class="playlist-card__icon">💖</span>
+              </div>
+              <div class="playlist-card__center">
+                <h4 class="playlist-card__title">Kaun Tujhe</h4>
+                <p class="playlist-card__desc">M.S. Dhoni • "Kaun tujhe yun pyar karega..."</p>
+              </div>
+              <div class="playlist-card__right">
+                <span class="playlist-card__status">Tap to Play</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ROMANTIC SHAYARI CARD -->
+        <div class="music-quote-banner">
+          <span class="music-quote-icon">🌸</span>
+          <p class="music-quote-text">
+            "Gaane toh hazaron hain is jahan mein, par mere dil ka sabse pasandeeda geet tumhari muskurahat ki khanak hai..."
+          </p>
+          <span class="music-quote-sub">— Only for you, Alfiya ❤️</span>
+        </div>
+
+        <!-- CTA TO PAGE 13 (END PAGE) -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue" id="page12Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Next: Ek Aakhri Baat Jo Dil Mein Hai 💌→
+              </span>
+              <span class="cta__spark">✨</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">Is pyare se safar ka aakhri aur sabse pyara hissa… 🌹</p>
+        </div>
+
+        <!-- FLOATING QUICK NEXT ACTION BUTTON -->
+        <button class="music-floating-next-btn" id="musicFloatingNextBtn" type="button" title="Go to Next Page">
+          <span>💌 Next Page →</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 13 (END PAGE) ================= -->
+
+    <section class="page page--end"
+      data-page="13"
+      id="page-13"
+      aria-hidden="true">
+
+      <div class="end-page__container">
+
+        <!-- HEADER -->
+        <header class="end-page__header">
+          <div class="memories__badge">
+            <span>🌹 Chapter 13 • From The Deepest Corner Of My Heart 💌</span>
+          </div>
+
+          <h1 class="end-page__title">
+            Ek Aakhri Baat Jo Dil Mein Hai... ✨
+          </h1>
+
+          <p class="end-page__subtitle">
+            Yeh website toh bas ek bahana tha, asal baat toh yeh hai ki tum kitni anmol ho.
+          </p>
+
+          <p class="memories__hint">
+            💌 <span>Final Letter:</span> Har lafz dil se likha gaya hai, sirf tumhare liye.
+          </p>
+        </header>
+
+        <!-- ROYAL PARCHMENT LOVE LETTER -->
+        <div class="end-letter-wrapper">
+
+          <div class="end-letter" id="endLetterCard">
+            <!-- Wax Seal Top Stamp -->
+            <div class="end-letter__seal-badge" title="Sealed with love">
+              <div class="end-seal-ring">
+                <span class="end-seal-icon">A ❤️ 19</span>
+              </div>
+            </div>
+
+            <!-- Floral Corner Accents -->
+            <span class="end-letter__corner end-letter__corner--tl">🌸</span>
+            <span class="end-letter__corner end-letter__corner--tr">✨</span>
+            <span class="end-letter__corner end-letter__corner--bl">🌿</span>
+            <span class="end-letter__corner end-letter__corner--br">🌹</span>
+
+            <!-- Letter Header -->
+            <div class="end-letter__meta">
+              <span class="end-letter__salutation">Happy Birthday Shonu ❤️,</span>
+              <span class="end-letter__badge-date">On Your 19th Birthday • 2026 🌸</span>
+            </div>
+
+            <!-- Letter Body with Editable Content -->
+            <div class="end-letter__body" id="endLetterBody">
+              <p class="end-letter__p" id="endLetterP1">
+                Happy Birthday Again Shonu... Allah kare ki tumhe sab khushiya mile, sab sahi rahe, aur hum sath rahe aur humara sath humesha rahe... Aur hum dono me trust, love, care badhe, aur sabse zyada understanding badhe... ❤️
+              </p>
+
+              <p class="end-letter__p" id="endLetterP2">
+                May your 19th year be full of gentle moments, endless laughter, big dreams coming true, and all the happiness this universe can offer. ✨
+              </p>
+
+              <!-- Secret 6 AM Surprise Badge -->
+              <div class="end-letter__secret-note">
+                <span class="secret-note-icon">⏰💌</span>
+                <div class="secret-note-content">
+                  <span class="secret-note-tag">A Sweet Surprise Just For You</span>
+                  <p class="secret-note-text">Last one is: <strong>Check your WhatsApp at 6 AM</strong> 🤫📱✨</p>
+                </div>
+              </div>
+
+              <div class="end-letter__quote-card" id="endLetterQuoteBlock">
+                <span class="end-letter__quote-mark">“</span>
+                <p class="end-letter__quote-text" id="endLetterQuoteText">
+                  Hamesha aise hi muskurati rehna, kyunki tumhari muskaan kisi ki poori duniya hai.
+                </p>
+                <span class="end-letter__quote-sub">Forever & Always ❤️✨</span>
+              </div>
+            </div>
+
+            <!-- Letter Sign-off -->
+            <div class="end-letter__sign-zone">
+              <div class="end-letter__sign-left">
+                <span class="end-letter__sign-sub">Hamesha tumhare sath,</span>
+                <span class="end-letter__sign-name" id="endLetterSignName">With all my love & respect 💖</span>
+              </div>
+              <div class="end-letter__sign-stamp">
+                <span class="stamp-circle">19 & Beyond ✨</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- QUICK CUSTOMIZE / EDIT MESSAGE BAR -->
+          <div class="end-customize-zone">
+            <button class="end-customize-btn" id="endEditLetterBtn" type="button" title="Change or customize the message">
+              <span>✏️ Change Message / Apna Message Likhein</span>
+            </button>
+            <button class="end-customize-btn end-customize-btn--reset" id="endResetLetterBtn" type="button" title="Reset to original heartfelt message" style="display:none;">
+              <span>🔄 Reset Message</span>
+            </button>
+          </div>
+
+          <!-- MODAL / INLINE EDITOR FOR CUSTOM MESSAGE (OPENS WHEN USER CLICKS EDIT) -->
+          <div class="end-letter-editor" id="endLetterEditor" style="display:none;">
+            <div class="end-editor-card">
+              <div class="end-editor-header">
+                <h3>💌 Write Your Special Words for Alfiya</h3>
+                <button class="end-editor-close" id="endEditorCloseBtn" type="button">✕</button>
+              </div>
+              <p class="end-editor-desc">
+                Aap jo bhi likhna chahte hain, yahan likhein ya paste karein. Save karte hi End Page par update ho jayega!
+              </p>
+              <textarea class="end-editor-textarea" id="endCustomMessageInput" rows="7" placeholder="Alfiya ke liye apna special message yahan likhein..."></textarea>
+              <div class="end-editor-actions">
+                <button class="cta end-editor-save-btn" id="endSaveCustomMessageBtn" type="button">
+                  <span class="cta__surface">
+                    <span class="cta__label">Save Message 💌</span>
+                    <span class="cta__spark">✨</span>
+                  </span>
+                </button>
+                <button class="end-editor-cancel-btn" id="endCancelCustomMessageBtn" type="button">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- INTERACTIVE REACTION BUTTONS -->
+        <div class="end-reactions-bar">
+          <button class="end-reaction-chip" id="endHeartsBtn" type="button">
+            <span>💖 Shower 100 Hearts</span>
+          </button>
+          <button class="end-reaction-chip" id="endPetalsBtn" type="button">
+            <span>🌸 Blossom Rain</span>
+          </button>
+          <button class="end-reaction-chip" id="endWishBtn" type="button">
+            <span>✨ 19th Birthday Blessing</span>
+          </button>
+        </div>
+
+        <!-- GRAND FINALE CELEBRATION CTA -->
+        <div class="memories-continue-zone">
+          <button class="cta memories__continue end-page__finale-btn" id="page13Btn" type="button">
+            <span class="cta__surface">
+              <span class="cta__shimmer"></span>
+              <span class="cta__label">
+                Celebrate The Grand Finale 🌸🎂
+              </span>
+              <span class="cta__spark">✨</span>
+            </span>
+          </button>
+          <p class="memories-continue-hint">One final magical surprise awaits Alfiya… 🎂</p>
+
+          <button class="end-replay-link" id="endReplayJourneyBtn" type="button">
+            🔄 Revisit Whole Journey From Chapter 1
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <div
+    class="transition-glow"
+    id="transitionGlow">
+  </div>
+
+  <!-- CUTE FLOATING TOAST -->
+  <div class="cute-toast" id="cuteToast" aria-live="polite"></div>
+
+  <!-- POLAROID LIGHTBOX MODAL -->
+  <div class="polaroid-lightbox" id="polaroidLightbox" aria-hidden="true" role="dialog" aria-label="Expanded Memory Photo">
+    <div class="polaroid-lightbox__backdrop" id="polaroidLightboxBackdrop"></div>
+    <div class="polaroid-lightbox__content">
+      <button class="polaroid-lightbox__close" id="polaroidLightboxClose" type="button" aria-label="Close photo preview">✕</button>
+      <div class="polaroid-lightbox__media">
+        <img id="lightboxImg" src="" alt="Expanded memory" />
+      </div>
+      <div class="polaroid-lightbox__info">
+        <span class="polaroid-lightbox__date" id="lightboxDate"></span>
+        <h3 class="polaroid-lightbox__title" id="lightboxTitle"></h3>
+        <p class="polaroid-lightbox__quote" id="lightboxQuote"></p>
+        <p class="polaroid-lightbox__text" id="lightboxText"></p>
+        <div class="polaroid-lightbox__nav">
+          <button class="lightbox-nav-btn" id="lightboxPrevBtn" type="button">← Prev</button>
+          <button class="lightbox-nav-btn lightbox-nav-btn--flip" id="lightboxFlipBtn" type="button">💌 Read Note</button>
+          <button class="lightbox-nav-btn" id="lightboxNextBtn" type="button">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIDDEN PHOTO INPUT FOR REPLACING POLAROID PHOTO -->
+  <input type="file" id="polaroidPhotoInput" accept="image/*" style="display:none;" />
+
+  <!-- FINALE CELEBRATION MODAL -->
+  <div class="finale-modal" id="finaleModal" aria-hidden="true">
+    <div class="finale-modal__backdrop" id="finaleBackdrop"></div>
+    <div class="finale-modal__card">
+      <div class="finale-modal__decor">🌸 🎂 🌸</div>
+      <p class="finale-modal__pre">To Be Continued In Our Story…</p>
+      <h2 class="finale-modal__title">Happy 19th Birthday, Alfiya! ❤️</h2>
+      <p class="finale-modal__message">
+        Every little flower, every sweet thought, and every word here was created just to bring a smile to your face. Thank you for making ordinary days feel like poetry and for being such a wonderful, radiant person.
+      </p>
+      <p class="finale-modal__highlight">
+        May your 19th year be filled with gentle moments, endless laughter, and all the love your heart can hold. ✨
+      </p>
+      <div class="finale-modal__actions">
+        <button class="cta finale-modal__replay" id="replayBtn" type="button">
+          <span class="cta__surface">
+            <span class="cta__shimmer"></span>
+            <span class="cta__label">Revisit From The Start 🌸</span>
+            <span class="cta__spark">✨</span>
+          </span>
+        </button>
+        <button class="finale-modal__close-text" id="closeFinaleBtn" type="button">
+          Keep Exploring 💗
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

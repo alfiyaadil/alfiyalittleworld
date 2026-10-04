@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="rainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d4960" />
+      <stop offset="50%" stop-color="#2a3345" />
+      <stop offset="100%" stop-color="#1d2433" />
+    </linearGradient>
+
+    <!-- Warm Lamp Glow -->
+    <radialGradient id="lampGlow" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffdfa9" stop-opacity="0.85" />
+      <stop offset="40%" stop-color="#f5a770" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#f5a770" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Cozy Mug Gradient -->
+    <linearGradient id="mugGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffeef2" />
+      <stop offset="100%" stop-color="#f9cad8" />
+    </linearGradient>
+
+    <linearGradient id="cocoaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a4b3a" />
+      <stop offset="100%" stop-color="#4a2c20" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Window View: Rainy Night Sky -->
+  <rect width="600" height="600" fill="url(#rainBg)" />
+
+  <!-- Rain Streaks outside the window -->
+  <g stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round">
+    <line x1="80" y1="40" x2="60" y2="130" />
+    <line x1="140" y1="20" x2="120" y2="110" />
+    <line x1="220" y1="80" x2="200" y2="170" />
+    <line x1="310" y1="30" x2="290" y2="120" />
+    <line x1="450" y1="70" x2="430" y2="160" />
+    <line x1="520" y1="40" x2="500" y2="130" />
+    <line x1="110" y1="180" x2="90" y2="280" />
+    <line x1="280" y1="170" x2="260" y2="260" />
+    <line x1="390" y1="190" x2="370" y2="290" />
+    <line x1="510" y1="180" x2="490" y2="270" />
+  </g>
+
+  <!-- Distant City / Bokeh Lights -->
+  <circle cx="160" cy="180" r="28" fill="#ffd199" opacity="0.35" filter="url(#softGlow)" />
+  <circle cx="280" cy="140" r="38" fill="#ffb4c8" opacity="0.3" filter="url(#softGlow)" />
+  <circle cx="430" cy="220" r="32" fill="#ffeaa7" opacity="0.35" filter="url(#softGlow)" />
+  <circle cx="340" cy="270" r="24" fill="#a8e6cf" opacity="0.25" filter="url(#softGlow)" />
+
+  <!-- Warm Indoor Glow -->
+  <rect width="600" height="600" fill="url(#lampGlow)" />
+
+  <!-- Window Sill & Wooden Table -->
+  <rect x="0" y="380" width="600" height="220" fill="#2d1e18" />
+  <rect x="0" y="380" width="600" height="18" fill="#442e24" />
+
+  <!-- Cozy Knitted Blanket Corner -->
+  <path d="M0,450 Q80,440 140,510 Q190,560 210,600 L0,600 Z" fill="#e89cb2" opacity="0.85" />
+  <path d="M0,470 Q90,460 150,530 Q180,570 195,600" fill="none" stroke="#fce4ec" stroke-width="4" stroke-dasharray="8,6" opacity="0.7" />
+
+  <!-- Cozy Ceramic Mug -->
+  <g transform="translate(300, 310)">
+    <!-- Mug Shadow -->
+    <ellipse cx="60" cy="180" rx="90" ry="24" fill="#140b08" opacity="0.45" />
+
+    <!-- Mug Handle -->
+    <path d="M125,60 C175,60 175,130 125,140" fill="none" stroke="url(#mugGrad)" stroke-width="20" stroke-linecap="round" />
+
+    <!-- Mug Body -->
+    <rect x="0" y="30" width="130" height="135" rx="22" fill="url(#mugGrad)" />
+    <!-- Mug Highlights -->
+    <rect x="14" y="45" width="10" height="100" rx="5" fill="#ffffff" opacity="0.45" />
+
+    <!-- Coffee Top -->
+    <ellipse cx="65" cy="30" rx="60" ry="18" fill="url(#cocoaGrad)" />
+
+    <!-- Fluffy Heart Foam Art -->
+    <path d="M65,30 C65,22 50,18 45,26 C40,18 25,22 25,30 C25,40 50,45 65,52 C80,45 105,40 105,30 C105,22 90,18 85,26 C80,18 65,22 65,30 Z" fill="#ffffff" opacity="0.92" transform="scale(0.55) translate(48, 14)" />
+
+    <!-- Marshmallows -->
+    <rect x="35" y="16" width="18" height="15" rx="6" fill="#fff5f7" transform="rotate(-12 35 16)" />
+    <rect x="68" y="14" width="18" height="15" rx="6" fill="#fff5f7" transform="rotate(18 68 14)" />
+
+    <!-- Steam curls -->
+    <path d="M45,-10 Q35,-40 55,-60 Q75,-80 50,-100" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="4" stroke-linecap="round" filter="url(#softGlow)" />
+    <path d="M80,-15 Q95,-45 75,-70 Q60,-95 80,-115" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4" stroke-linecap="round" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Sweet Pastel Macaron Plate -->
+  <g transform="translate(140, 420)">
+    <ellipse cx="60" cy="50" rx="65" ry="18" fill="#140b08" opacity="0.35" />
+    <ellipse cx="60" cy="45" rx="62" ry="16" fill="#ffffff" />
+    <ellipse cx="60" cy="45" rx="54" ry="13" fill="#f8e8ed" />
+
+    <!-- Pink Strawberry Macaron -->
+    <rect x="25" y="24" width="42" height="12" rx="6" fill="#f48fb1" />
+    <rect x="23" y="32" width="46" height="4" rx="2" fill="#fce4ec" />
+    <rect x="25" y="35" width="42" height="12" rx="6" fill="#f48fb1" />
+
+    <!-- Vanilla Macaron behind -->
+    <rect x="52" y="12" width="42" height="12" rx="6" fill="#ffe082" />
+    <rect x="50" y="20" width="46" height="4" rx="2" fill="#fffde7" />
+    <rect x="52" y="23" width="42" height="12" rx="6" fill="#ffe082" />
+  </g>
+
+  <!-- Fairy Lights along top -->
+  <path d="M-10,40 Q150,90 300,50 Q450,20 610,60" fill="none" stroke="#5d4037" stroke-width="3" />
+  <circle cx="80" cy="65" r="9" fill="#ffe57f" filter="url(#softGlow)" />
+  <circle cx="200" cy="74" r="9" fill="#ff80ab" filter="url(#softGlow)" />
+  <circle cx="320" cy="50" r="9" fill="#ffe57f" filter="url(#softGlow)" />
+  <circle cx="440" cy="35" r="9" fill="#b9f6ca" filter="url(#softGlow)" />
+  <circle cx="540" cy="54" r="9" fill="#ff80ab" filter="url(#softGlow)" />
+
+  <!-- Window Drops Over Glass Foreground -->
+  <g fill="rgba(255,255,255,0.7)">
+    <circle cx="120" cy="150" r="3" />
+    <ellipse cx="120" cy="155" rx="2.5" ry="5" />
+    <circle cx="250" cy="90" r="2" />
+    <ellipse cx="250" cy="96" rx="2" ry="6" />
+    <circle cx="480" cy="140" r="3" />
+    <circle cx="390" cy="180" r="2.5" />
+    <circle cx="410" cy="250" r="3.5" />
+    <circle cx="190" cy="310" r="2" />
+    <circle cx="520" cy="290" r="3" />
+  </g>
+</svg>
